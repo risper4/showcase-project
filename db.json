@@ -1,0 +1,24 @@
+{
+    "store_info": [
+    {
+      "id": 1,
+      "name": "Sweet Cafe",
+      "Description": "Home away from home",
+      "phone_number": "555-5555"
+    }
+   ],
+   "smoothies": [
+    { "id": 1, "name": "Tropical sunrise", "ingredients": ["mango", "pineapple", "orange juice", "turmeric"], "price": 320,  "badges": ["popular", "vegan"] },
+    { "id": 2, "name": "Berry blast", "ingredients": ["strawberry", "blueberry", "raspberry", "yoghurt"], "price": 300,  "badges": ["popular"] },
+    { "id": 3, "name": "Green detox", "ingredients": ["spinach", "cucumber", "green apple", "lemon", "ginger"], "price": 340,  "badges": ["vegan", "new"] },
+    { "id": 4, "name": "Peanut butter banana", "ingredients": ["banana", "peanut butter", "oat milk", "honey", "cinnamon"], "price": 360,  "badges": ["popular"] },
+    { "id": 5, "name": "Passion & mango", "ingredients": ["passion fruit", "mango", "coconut water", "lime"], "price": 320,  "badges": ["vegan"] },
+    { "id": 6, "name": "Avocado dream", "ingredients": ["avocado", "banana", "almond milk", "honey", "vanilla"], "price": 380,  "badges": ["new"] },
+    { "id": 7, "name": "Watermelon cooler", "ingredients": ["watermelon", "mint", "lime juice", "coconut water"], "price": 280,  "badges": ["vegan"] },
+    { "id": 8, "name": "Chocolate protein", "ingredients": ["cocoa powder", "banana", "peanut butter", "oat milk", "chia seeds"], "price": 400,  "badges": ["popular"] },
+    { "id": 9, "name": "Strawberry oat", "ingredients": ["strawberry", "oats", "yoghurt", "honey", "vanilla"], "price": 300,  "badges": [] },
+    { "id": 10, "name": "Ginger citrus zing", "ingredients": ["orange", "carrot", "ginger", "lemon", "turmeric"], "price": 320,  "badges": ["vegan", "new"] }
+  ],
+  "$schema": ["./node_modules/json-server/schema.json"]
+
+}
