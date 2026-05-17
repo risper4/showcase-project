@@ -168,7 +168,19 @@
       "ingredients": "Peanut butter, Greek Yorghut, Vanilla compound, Bananas",
       "badges": "Popular",
       "id": "bxPj7U8kffc"
+    },
+    {
+      "name": "Vanilla Banana smoothie",
+      "price": "300",
+      "ingredients": [
+        "Banana",
+        "Yorghut"
+      ],
+      "badges": [
+        "New"
+      ],
+      "id": "FD8JJSknC7w"
     }
   ],
-  "$schema": ["./node_modules/json-server/schema.json"]
+  "$schema": "./node_modules/json-server/schema.json"
 }

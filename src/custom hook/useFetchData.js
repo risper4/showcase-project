@@ -15,6 +15,7 @@ export default function useFetchData(url) {
                 }
             })
             .then((result) => {
+                console.log(result)
                 setSmoothies(result)
                 setLoading(false)
             })

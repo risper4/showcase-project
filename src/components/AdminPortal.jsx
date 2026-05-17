@@ -11,36 +11,40 @@ export default function AdminPortal() {
         badges : ''
     })
 
-    function handleSubmit (event) {
-       event.preventDefault()
+    function handleSubmit(event) {
+  event.preventDefault()
 
-       fetch('http://localhost:3001/smoothies',
-        {
-            method : "POST",
-            headers : {
-                "Content-type" : "application/json"
-            },
-            body : JSON.stringify(formData)
-        }
-       )
-       .then((response) => {
-        if(!response.ok){
-            throw new Error('Error occurred')
-        }else{
-            return response.json()
-        }
-       })
-       .then((data) => {
-         setSmoothies([...smoothies, data])
-         setFormData({
-            name : '',
-            price : '',
-            ingredients : '',
-            badges : ''
-         })
-       })
-       .catch((error) => alert(error))
+  const formattedData = {
+    ...formData,
+    ingredients: formData.ingredients.split(',').map(i => i.trim()),
+    badges: formData.badges.split(',').map(b => b.trim())
+  }
+
+  fetch('http://localhost:3001/smoothies', {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json"
+    },
+    body: JSON.stringify(formattedData) 
+  })
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error('Error occurred')
+    } else {
+      return response.json()
     }
+  })
+  .then((data) => {
+    setSmoothies([...smoothies, data])
+    setFormData({
+      name: '',
+      price: '',
+      ingredients: '',
+      badges: ''
+    })
+  })
+  .catch((error) => alert(error))
+}
 
     function handleOnChange(e) {
         setFormData({...formData, [e.target.name] : e.target.value})
