@@ -9,7 +9,7 @@ export default function useFetchData(url) {
         fetch(url)
             .then((response) => {
                 if (!response.ok) {
-                    throw new Error('Error occurred')
+                    throw new Error('Error occurred', response.status)
                 } else {
                     return response.json()
                 }

@@ -1,7 +1,9 @@
-import { useState } from "react"
+import { useState, useId } from "react"
+import NavBar from "./NavBar"
+import { UseSmoothies } from "../useContext/SmoothieContext"
 
-export default function AdminPortal({addSmoothies}) {
-
+export default function AdminPortal() {
+    const {smoothies, setSmoothies} = UseSmoothies()
     const [formData, setFormData] = useState({
         name : '',
         price : '',
@@ -29,7 +31,7 @@ export default function AdminPortal({addSmoothies}) {
         }
        })
        .then((data) => {
-         addSmoothies(data)
+         setSmoothies([...smoothies, data])
          setFormData({
             name : '',
             price : '',
@@ -44,12 +46,19 @@ export default function AdminPortal({addSmoothies}) {
         setFormData({...formData, [e.target.name] : e.target.value})
     }
 
+    const nameId = useId()
+    const priceId = useId()
+    const ingredientId = useId()
+    const badgeId = useId()
+
+
     return(
         <>
+        <NavBar/>
         <form onSubmit={handleSubmit}>
             <input
              type="text"
-             id = '' 
+             id = {nameId}
              name = 'name'
              placeholder="Enter name"
              value = {formData.name}
@@ -57,7 +66,7 @@ export default function AdminPortal({addSmoothies}) {
              />
              <input
              type="number"
-             id = '' 
+             id = {priceId} 
              name = 'price'
              placeholder="Enter price"
              value = {formData.price}
@@ -65,7 +74,7 @@ export default function AdminPortal({addSmoothies}) {
              />
              <input
              type="text"
-             id = '' 
+             id = {ingredientId} 
              name = 'ingredients'
              placeholder="Enter ingredients"
              value = {formData.ingredients}
@@ -73,7 +82,7 @@ export default function AdminPortal({addSmoothies}) {
              />
              <input
              type="text"
-             id = '' 
+             id = {badgeId} 
              name = 'badges'
              placeholder="Enter badge"
              value = {formData.badges}
