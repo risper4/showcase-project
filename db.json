@@ -156,21 +156,19 @@
       ]
     },
     {
-      "name": "Vanilla Banana smoothie",
-      "price": "300",
+      "name": "Protein Smoothies",
+      "price": "400",
       "ingredients": "",
-      "badges": "Popular",
-      "badge": "P",
-      "id": "MiXLbVSedwc"
+      "badges": "New",
+      "id": "lLBLkOsNKIg"
     },
     {
       "name": "Vanilla Banana smoothie",
       "price": "300",
-      "ingredients": "",
+      "ingredients": "Peanut butter, Greek Yorghut, Vanilla compound, Bananas",
       "badges": "Popular",
-      "badge": "P",
-      "id": "GwoYVw982e0"
+      "id": "bxPj7U8kffc"
     }
   ],
-  "$schema": ["./node_modules/json-server/schema.json"]
+  "$schema": "./node_modules/json-server/schema.json"
 }

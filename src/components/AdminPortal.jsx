@@ -1,7 +1,8 @@
 import { useState, useId } from "react"
+import { UseSmoothies } from "../useContext/SmoothieContext"
 
-export default function AdminPortal({addSmoothies}) {
-
+export default function AdminPortal() {
+    const {smoothies, setSmoothies} = UseSmoothies()
     const [formData, setFormData] = useState({
         name : '',
         price : '',
@@ -29,7 +30,7 @@ export default function AdminPortal({addSmoothies}) {
         }
        })
        .then((data) => {
-         addSmoothies(data)
+         setSmoothies([...smoothies, data])
          setFormData({
             name : '',
             price : '',
