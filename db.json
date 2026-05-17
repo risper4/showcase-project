@@ -170,5 +170,5 @@
       "id": "bxPj7U8kffc"
     }
   ],
-  "$schema": "./node_modules/json-server/schema.json"
+  "$schema": ["./node_modules/json-server/schema.json"]
 }

@@ -3,6 +3,7 @@ import ShopList from "./ShopList"
 // import AdminPortal from "./AdminPortal"
 import { useState } from "react"
 import Search from "./Search"
+import NavBar from "./NavBar"
 import { UseSmoothies } from "../useContext/SmoothieContext"
 
 export default function Shop() {
@@ -23,6 +24,7 @@ export default function Shop() {
     if(loading) return <p>Loading ...</p>
     return(
         <>
+        <NavBar/>
         <Search search = {search} setSearch = {setSearch}/>
         {/* <AdminPortal addSmoothies = {addSmoothies}/> */}
         <ShopList smoothies = {filteredSmoothies}/>

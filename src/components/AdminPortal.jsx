@@ -1,4 +1,5 @@
 import { useState, useId } from "react"
+import NavBar from "./NavBar"
 import { UseSmoothies } from "../useContext/SmoothieContext"
 
 export default function AdminPortal() {
@@ -53,6 +54,7 @@ export default function AdminPortal() {
 
     return(
         <>
+        <NavBar/>
         <form onSubmit={handleSubmit}>
             <input
              type="text"
