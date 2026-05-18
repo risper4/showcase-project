@@ -11,12 +11,7 @@
     {
       "id": "1",
       "name": "Tropical sunrise",
-      "ingredients": [
-        "mango",
-        "pineapple",
-        "orange juice",
-        "turmeric"
-      ],
+      "ingredients": "mango,pineapple,watermelon, juice,turmeric",
       "price": 320,
       "badges": [
         "popular",
@@ -156,18 +151,16 @@
       ]
     },
     {
-      "name": "Protein Smoothies",
-      "price": "400",
-      "ingredients": "",
-      "badges": "New",
-      "id": "lLBLkOsNKIg"
-    },
-    {
       "name": "Vanilla Banana smoothie",
-      "price": "300",
-      "ingredients": "Peanut butter, Greek Yorghut, Vanilla compound, Bananas",
-      "badges": "Popular",
-      "id": "bxPj7U8kffc"
+      "price": "500",
+      "ingredients": [
+        "Banana",
+        "Yorghut"
+      ],
+      "badges": [
+        "Popular"
+      ],
+      "id": "vBr-NH_hOjI"
     }
   ],
   "$schema": ["./node_modules/json-server/schema.json"]

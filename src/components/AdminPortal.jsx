@@ -14,7 +14,7 @@ export default function AdminPortal() {
     function handleSubmit (event) {
        event.preventDefault()
 
-       fetch('http://localhost:3001/smoothies',
+       fetch('http://localhost:3000/smoothies',
         {
             method : "POST",
             headers : {
@@ -55,7 +55,7 @@ export default function AdminPortal() {
     return(
         <>
         <NavBar/>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="frm">
             <input
              type="text"
              id = {nameId}
