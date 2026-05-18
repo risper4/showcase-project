@@ -7,6 +7,7 @@ export default function Search({search, setSearch}) {
          placeholder="Search smoothie name"
          value={search || ''}
          onChange={(e) => setSearch(e.target.value)}
+         className="search"
          />
         </>
     )

@@ -5,7 +5,7 @@ const SmoothieContext = createContext()
 
 export function SmoothieProvider({children}){
 
-    const {smoothies, loading, setSmoothies} = useFetchData('http://localhost:3000/smoothies')
+    const {smoothies, loading, setSmoothies} = useFetchData('http://localhost:3001/smoothies')
 
     return (
         <SmoothieContext.Provider value = {{smoothies, loading, setSmoothies}}>

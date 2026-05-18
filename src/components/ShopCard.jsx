@@ -11,7 +11,7 @@ export default function ShopCard({smoothie, addDelete, addEdit}) {
    
 
     function handleEdit(){
-        fetch(`http://localhost:3000/smoothies/${smoothie.id}`,
+        fetch(`http://localhost:3001/smoothies/${smoothie.id}`,
             {
                 method : 'PATCH',
                 headers : {
@@ -42,7 +42,7 @@ export default function ShopCard({smoothie, addDelete, addEdit}) {
 
     function handleDelete() {
 
-        fetch(`http://localhost:3000/smoothies/${smoothie.id}`, 
+        fetch(`http://localhost:3001/smoothies/${smoothie.id}`, 
             {
                 method : 'DELETE'
             }
@@ -87,7 +87,7 @@ export default function ShopCard({smoothie, addDelete, addEdit}) {
       </div>
     </div>
 
-    <form onSubmit={handleEdit} >
+    <form onSubmit={handleEdit} className="edit-form">
         <input
          type="text" 
          name="name"
