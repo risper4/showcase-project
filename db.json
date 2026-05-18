@@ -117,9 +117,7 @@
         "chia seeds"
       ],
       "price": 400,
-      "badges": [
-        "popular"
-      ]
+      "badges": "new"
     },
     {
       "id": "9",
@@ -152,7 +150,7 @@
     },
     {
       "name": "Vanilla Banana smoothie",
-      "price": "500",
+      "price": "300",
       "ingredients": [
         "Banana",
         "Yorghut"
@@ -161,7 +159,14 @@
         "Popular"
       ],
       "id": "vBr-NH_hOjI"
+    },
+    {
+      "name": "Sweet special ",
+      "price": "320",
+      "ingredients": "chia seeds, oat milk, strawberries, honey, mangoes",
+      "badges": "New, Special offer",
+      "id": "uuSQtq4Txbk"
     }
   ],
-  "$schema": ["./node_modules/json-server/schema.json"]
+  "$schema": "./node_modules/json-server/schema.json"
 }

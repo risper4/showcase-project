@@ -10,7 +10,7 @@ function App() {
   
 
   return (
-    <>
+    <div id='container'>
       <SmoothieProvider>
         Welcome
         <BrowserRouter>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
         </BrowserRouter>
       </SmoothieProvider>
-    </>
+    </div>
   )
 }
 

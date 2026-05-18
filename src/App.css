@@ -184,17 +184,125 @@
 } */
 
 
-form > input {
-  width : 300px;
-  height: 50px;
-  font-size: 18px;
-  padding: 10px;
+#frm input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 14px;
+  background: #f9f9f9;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.15s;
 }
 
-.frm {
+#frm {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+#frm input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+#frm input ::placeholder {
+  color: #bbb;
+}
+
+#frm button {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: opacity 0.15s;
+}
+
+#frm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.edit-form {
+  border-top: 0.5px solid #e5e5e5;
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input {
+  width: 60%;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 0 10px;
+  font-size: 13px;
+  background: rgb(189, 137, 58);
+  border: 0.5px solid #e5e5e5;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.edit-form input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.edit-form button {
+  width: 40%;
+  height: 36px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2px;
+  transition: opacity 0.15s;
+}
+
+h1 {
+  color: chocolate;
+}
+
+
+#container {
+ 
+  overflow: hidden;
+  background-color: rgb(41, 71, 97);
+  margin: 40px;
+  padding: 50px;
+  display: block;
   justify-content: center;
+  align-items: center;
+}
+
+.search {
+  width: 50%;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 14px;
+  background: #f9f9f9;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.15s;
+  margin-top: 20px;
 }
